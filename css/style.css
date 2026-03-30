@@ -1,0 +1,17 @@
+h1,
+h2 {
+    color: blue;
+}
+
+p,
+li,
+label,
+table {
+    color: black;
+}
+
+nav ul li:nth-child(2),
+table tr:nth-child(2),
+label:nth-child(even) {
+    color: red;
+}
