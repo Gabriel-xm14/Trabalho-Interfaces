@@ -1,4 +1,3 @@
-/* CSS principal — importa todos os arquivos CSS na ordem correta */
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
 @import url('modern-normalize.css');
@@ -7,9 +6,6 @@
 @import url('layout.css');
 @import url('components.css');
 
-/* Estilos exclusivos desta página (não reutilizáveis) */
-
-/* Hero da seção principal */
 .hero-banner {
     width: 100%;
     height: clamp(200px, 40vw, 450px);
