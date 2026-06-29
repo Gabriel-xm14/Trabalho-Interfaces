@@ -1,0 +1,22 @@
+/* Variáveis CSS
+   Armazenam valores reutilizados em todo o projeto.
+   Facilitam manutenção e consistência visual.
+*/
+
+:root {
+    /* Cores */
+    --letter-color: #e8f4fd;
+    --background-color: #0a1628;
+    --bodybackground-color: #050d1a;
+    --highlight-color: #4fc3f7;
+    --accent-color: #ff6b35;
+    --card-bg: #0d2137;
+    --form-bg: #0d1e33;
+
+    /* Fontes */
+    --font-base: "Exo 2", sans-serif;
+
+    /* Bordas */
+    --radius: 8px;
+    --border-width: 2px;
+}

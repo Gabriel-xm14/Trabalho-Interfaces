@@ -1,0 +1,285 @@
+/* Componentes reutilizáveis da interface */
+
+/* ---- Galeria Flex (seção 2 - trabalho anterior) ---- */
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.gallery-flex figure {
+    flex: 1 1 200px;
+    max-width: 320px;
+    overflow: hidden;
+    border-radius: var(--radius);
+    border: var(--border-width) solid var(--highlight-color);
+    background-color: var(--card-bg);
+}
+
+.gallery-flex figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-flex figcaption {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    text-align: center;
+    color: var(--letter-color);
+}
+
+/* ---- Cards de texto ---- */
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: var(--border-width) solid var(--highlight-color);
+    border-radius: var(--radius);
+    background-color: var(--card-bg);
+}
+
+/* ---- Grid de cards ---- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* ---- Seção de texto com figura (seção 1) ---- */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-content figure {
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: var(--border-width) solid var(--highlight-color);
+}
+
+.section-content figure img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.section-content figcaption {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    text-align: center;
+    background-color: var(--card-bg);
+}
+
+@media (min-width: 768px) {
+    .section-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .section-content .text-block {
+        flex: 2;
+    }
+
+    .section-content figure {
+        flex: 1;
+        min-width: 280px;
+    }
+}
+
+/* ---- Link voltar ao topo ---- */
+.back-to-top {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: var(--border-width) solid var(--highlight-color);
+    border-radius: var(--radius);
+    padding: 0.3rem 0.8rem;
+}
+
+.back-to-top:hover {
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+}
+
+/* ====================================================
+   SESSÃO 3 — Formulário de Contato (Trabalho 3)
+   ==================================================== */
+
+/* Layout grid: figura à esquerda, formulário à direita em telas grandes */
+.form-section-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .form-section-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+
+.form-section-grid .form-image {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: var(--border-width) solid var(--highlight-color);
+}
+
+/* Formulário */
+.contact-form {
+    background-color: var(--form-bg);
+    border: var(--border-width) solid var(--highlight-color);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+}
+
+.contact-form fieldset {
+    border: var(--border-width) solid var(--highlight-color);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.contact-form legend {
+    color: var(--accent-color);
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+/* Grid interno do formulário */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+}
+
+@media (min-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-grid .full-width {
+        grid-column: 1 / -1;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--highlight-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background-color: var(--background-color);
+    color: var(--letter-color);
+    border: var(--border-width) solid var(--highlight-color);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-submit {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.form-submit:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* ====================================================
+   SESSÃO 4 — Painel de Fotos (Trabalho 3)
+   ==================================================== */
+
+.photo-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px;
+    gap: 6px;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: var(--border-width) solid var(--highlight-color);
+}
+
+/* Primeira foto ocupa 2 linhas */
+.photo-panel .photo-item:nth-child(1) {
+    grid-row: 1 / 3;
+}
+
+/* Todas as células do painel */
+.photo-panel .photo-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+}
+
+/* Telas menores: 2 colunas, sem overflow */
+@media (max-width: 767px) {
+    .photo-panel {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .photo-panel .photo-item {
+        height: 160px;
+    }
+
+    .photo-panel .photo-item:nth-child(1) {
+        grid-row: auto;
+    }
+}
+
+/* Telas grandes: painel ocupa ao menos 70% da largura */
+@media (min-width: 1024px) {
+    .photo-panel {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
