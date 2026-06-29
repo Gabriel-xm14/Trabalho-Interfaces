@@ -1,7 +1,3 @@
-/* Layout da página — estrutura principal
-   Específico deste projeto.
-*/
-
 /* Topo fixo */
 .fixed {
     position: sticky;
@@ -40,7 +36,6 @@ header button {
     font-size: 1.7rem;
 }
 
-/* Nav mobile (menu sanduíche) */
 nav {
     display: none;
     background-color: var(--background-color);
@@ -87,7 +82,6 @@ footer {
     color: var(--letter-color);
 }
 
-/* Nav desktop */
 @media (min-width: 768px) {
     header button {
         display: none;
