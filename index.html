@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO — metatags gerais -->
+    <title>Sistema Solar — Guia Educativo</title>
+    <meta name="description" content="Aprenda sobre o Sistema Solar: planetas, características, formação e curiosidades astronômicas em um guia educativo completo.">
+    <meta name="keywords" content="sistema solar, planetas, astronomia, educação, espaço, sol, terra, marte, júpiter">
+    <meta name="author" content="Seu Nome">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sistema Solar — Guia Educativo">
+    <meta property="og:description" content="Explore o Sistema Solar com textos, imagens e curiosidades astronômicas.">
+    <meta property="og:image" content="img/banner-solar.jpg">
+    <meta property="og:url" content="https://seuusuario.github.io/sistema-solar">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sistema Solar — Guia Educativo">
+    <meta name="twitter:description" content="Explore o Sistema Solar com textos, imagens e curiosidades.">
+    <meta name="twitter:image" content="img/banner-solar.jpg">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Topo fixo: header + nav -->
+    <div class="fixed">
+        <header id="topo">
+            <a href="index.html">
+                <img src="img/logo.svg" width="200" height="200" alt="Logo Sistema Solar" class="logo">
+            </a>
+            <h1>Sistema Solar</h1>
+            <button
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                onclick="
+                    const nav = document.querySelector('nav');
+                    const expanded = nav.classList.toggle('ativo');
+                    this.setAttribute('aria-expanded', expanded);
+                ">☰</button>
+        </header>
+        <nav aria-label="Menu principal">
+            <a href="index.html#section-planetas"    onclick="document.querySelector('nav').classList.remove('ativo')">Planetas</a>
+            <a href="index.html#section-galeria"     onclick="document.querySelector('nav').classList.remove('ativo')">Galeria</a>
+            <a href="index.html#section-contato"     onclick="document.querySelector('nav').classList.remove('ativo')">Contato</a>
+            <a href="index.html#section-painel"      onclick="document.querySelector('nav').classList.remove('ativo')">Fotos</a>
+        </nav>
+    </div>
+
+    <main>
+
+        <!-- =====================================================
+             SEÇÃO 1 — Texto educativo sobre planetas (Trabalho 2)
+             ===================================================== -->
+        <section id="section-planetas" aria-labelledby="titulo-planetas">
+            <h2 id="titulo-planetas">Os Planetas do Sistema Solar</h2>
+
+            <img
+                class="hero-banner"
+                src="img/banner-solar.jpg"
+                alt="Comparação de tamanho dos planetas do Sistema Solar"
+                width="1200"
+                height="400"
+                loading="lazy">
+
+            <div class="section-content">
+                <div class="text-block">
+                    <h3>Formação do Sistema Solar</h3>
+                    <p>O Sistema Solar surgiu há aproximadamente 4,6 bilhões de anos a partir de uma nebulosa solar — uma enorme nuvem de gás e poeira interestelar. A gravidade fez essa nuvem colapsar, formando o Sol no centro, enquanto o material restante girava em disco ao redor dele e se aglutinava em planetas, luas, asteroides e cometas.</p>
+                    <p>Oito planetas orbitam o Sol em trajetórias elípticas. Os quatro planetas internos (Mercúrio, Vênus, Terra e Marte) são rochosos e densos. Os quatro externos (Júpiter, Saturno, Urano e Netuno) são gigantes gasosos ou gelados.</p>
+
+                    <h3>Planetas Rochosos</h3>
+                    <p><strong>Mercúrio</strong> é o menor planeta e o mais próximo do Sol. Sem atmosfera significativa, sofre variações extremas de temperatura: de −180 °C à noite até 430 °C durante o dia.</p>
+                    <p><strong>Vênus</strong> possui densa atmosfera de dióxido de carbono que provoca efeito estufa intenso, tornando-o o planeta mais quente do sistema (≈ 465 °C). Curiosamente, seu dia é mais longo que seu ano.</p>
+                    <p><strong>Terra</strong> é o único planeta conhecido a abrigar vida. Possui água líquida na superfície, uma lua que estabiliza a inclinação axial e campo magnético que protege de radiação solar.</p>
+                    <p><strong>Marte</strong>, o Planeta Vermelho, tem o maior vulcão do sistema solar (Monte Olimpo, 21 km de altura) e evidências de que teve água líquida no passado. É o principal alvo de exploração humana futura.</p>
+
+                    <h3>Gigantes Gasosos e Gelados</h3>
+                    <p><strong>Júpiter</strong> é o maior planeta, com massa 2,5 vezes maior que a de todos os outros planetas somados. Sua Grande Mancha Vermelha é uma tempestade que dura há séculos. Possui pelo menos 95 luas conhecidas.</p>
+                    <p><strong>Saturno</strong> é famoso por seu impressionante sistema de anéis composto de gelo e rocha. Sua densidade média é tão baixa que flutuaria na água. Possui 146 luas, sendo Titã a mais relevante por ter atmosfera densa e lagos de metano líquido.</p>
+                    <p><strong>Urano</strong> gira de lado — sua inclinação axial é de 98°, o que significa que seus polos ficam voltados para o Sol alternadamente. É considerado um gigante de gelo, com interior rico em água, amônia e metano.</p>
+                    <p><strong>Netuno</strong> é o planeta mais distante e tem os ventos mais rápidos do sistema solar, chegando a 2 100 km/h. Possui uma grande mancha escura (tempestade) semelhante à de Júpiter.</p>
+                </div>
+
+                <figure>
+                    <img
+                        src="img/sol-detalhe.jpg"
+                        alt="O Sol com detalhes de sua superfície"
+                        width="800"
+                        height="600"
+                        loading="lazy">
+                    <figcaption>O Sol — nossa estrela, fonte de energia de todo o Sistema Solar. Fonte: NASA (domínio público).</figcaption>
+                </figure>
+            </div>
+
+            <div class="cards-grid" style="margin-top:2rem;">
+                <article class="card">
+                    <h3>☀️ O Sol</h3>
+                    <p>O Sol contém 99,86% de toda a massa do Sistema Solar. Em seu núcleo, a temperatura chega a 15 milhões de °C, onde ocorre fusão nuclear que converte hidrogênio em hélio, liberando a energia que sustenta a vida na Terra.</p>
+                </article>
+                <article class="card">
+                    <h3>🌌 Cinturão de Asteroides</h3>
+                    <p>Localizado entre Marte e Júpiter, contém milhões de asteroides — restos de material que não se agregou em planeta devido à influência gravitacional de Júpiter. O maior corpo é o planeta anão Ceres.</p>
+                </article>
+                <article class="card">
+                    <h3>🌠 Cinturão de Kuiper e Nuvem de Oort</h3>
+                    <p>Além de Netuno, o Cinturão de Kuiper abriga Plutão e outros planetas anões. Ainda mais longe, a Nuvem de Oort é um reservatório esférico de cometas de longo período que define a fronteira gravitacional do Sistema Solar.</p>
+                </article>
+            </div>
+
+            <a href="#topo" class="back-to-top">↑ Voltar ao topo</a>
+        </section>
+
+        <!-- =====================================================
+             SEÇÃO 2 — Galeria Flex (Trabalho 2)
+             ===================================================== -->
+        <section id="section-galeria" aria-labelledby="titulo-galeria">
+            <h2 id="titulo-galeria">Galeria de Imagens</h2>
+
+            <div class="gallery-flex">
+                <figure>
+                    <img
+                        src="img/terra.jpg"
+                        alt="A Terra vista do espaço"
+                        width="800"
+                        height="800"
+                        loading="lazy">
+                    <figcaption>Terra — vista do espaço. Fonte: NASA (domínio público).</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="img/marte.jpg"
+                        alt="Superfície de Marte, o Planeta Vermelho"
+                        width="800"
+                        height="600"
+                        loading="lazy">
+                    <figcaption>Marte — o Planeta Vermelho. Fonte: NASA (domínio público).</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="img/jupiter.jpg"
+                        alt="Júpiter com sua Grande Mancha Vermelha"
+                        width="800"
+                        height="1000"
+                        loading="lazy">
+                    <figcaption>Júpiter e sua Grande Mancha Vermelha. Fonte: NASA (domínio público).</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="img/saturno.jpg"
+                        alt="Saturno com seus famosos anéis"
+                        width="1200"
+                        height="600"
+                        loading="lazy">
+                    <figcaption>Saturno e seus anéis. Fonte: NASA (domínio público).</figcaption>
+                </figure>
+            </div>
+
+            <p style="margin-top:1.5rem;"><strong>Referências:</strong> NASA (nasa.gov); ESA (esa.int). Todas as imagens são de domínio público.</p>
+
+            <a href="#topo" class="back-to-top">↑ Voltar ao topo</a>
+        </section>
+
+        <!-- =====================================================
+             SEÇÃO 3 — Formulário + Figura (Trabalho 3 — nova)
+             ===================================================== -->
+        <section id="section-contato" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Entre em Contato</h2>
+
+            <div class="form-section-grid">
+
+                <!-- Figura grande ao lado do formulário -->
+                <img
+                    class="form-image"
+                    src="img/nebulosa.jpg"
+                    alt="Nebulosa espacial capturada pelo telescópio Hubble"
+                    width="800"
+                    height="800"
+                    loading="lazy">
+
+                <!-- Formulário com fieldsets e tipos variados -->
+                <form class="contact-form" action="#" method="post" novalidate>
+
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="nome">Nome completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nascimento">Data de nascimento</label>
+                                <input type="date" id="nascimento" name="nascimento" autocomplete="bday">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(51) 99999-9999" autocomplete="tel">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sua Mensagem</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="assunto">Assunto de interesse</label>
+                                <select id="assunto" name="assunto">
+                                    <option value="">Selecione...</option>
+                                    <option value="planetas">Planetas</option>
+                                    <option value="sol">O Sol</option>
+                                    <option value="missoes">Missões Espaciais</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="nivel">Nível de conhecimento em astronomia</label>
+                                <input type="range" id="nivel" name="nivel" min="1" max="5" step="1" value="2">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua dúvida ou sugestão..." rows="5" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                                    Quero receber novidades por e-mail
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="form-submit">Enviar Mensagem 🚀</button>
+                </form>
+            </div>
+
+            <a href="#topo" class="back-to-top">↑ Voltar ao topo</a>
+        </section>
+
+        <!-- =====================================================
+             SEÇÃO 4 — Painel de Fotos (Trabalho 3 — nova)
+             ===================================================== -->
+        <section id="section-painel" aria-labelledby="titulo-painel">
+            <h2 id="titulo-painel">Painel de Fotografias Espaciais</h2>
+
+            <div class="photo-panel" role="list" aria-label="Painel de fotografias espaciais">
+
+                <div class="photo-item" role="listitem"
+                    style="background-image: url('img/terra.jpg');"
+                    aria-label="Terra vista do espaço"></div>
+
+                <div class="photo-item" role="listitem"
+                    style="background-image: url('img/lua.jpg');"
+                    aria-label="Lua Cheia"></div>
+
+                <div class="photo-item" role="listitem"
+                    style="background-image: url('img/saturno.jpg');"
+                    aria-label="Saturno e seus anéis"></div>
+
+                <div class="photo-item" role="listitem"
+                    style="background-image: url('img/jupiter.jpg');"
+                    aria-label="Júpiter"></div>
+
+                <div class="photo-item" role="listitem"
+                    style="background-image: url('img/marte.jpg');"
+                    aria-label="Marte"></div>
+
+                <div class="photo-item" role="listitem"
+                    style="background-image: url('img/nebulosa.jpg');"
+                    aria-label="Nebulosa espacial"></div>
+
+            </div>
+
+            <p style="margin-top:1rem; font-size:0.85rem; text-align:center;">Todas as imagens são de domínio público (NASA). Fonte: nasa.gov</p>
+
+            <a href="#topo" class="back-to-top">↑ Voltar ao topo</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <strong>Seu Nome</strong> &mdash; Disciplina de Design de Interfaces &mdash; 2026.</p>
+        <p>Imagens: NASA (domínio público). Textos de autoria própria com base em fontes públicas.</p>
+    </footer>
+
+</body>
+</html>
