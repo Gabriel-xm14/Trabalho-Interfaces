@@ -1,0 +1,42 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2 {
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p,
+li,
+label,
+table {
+    color: black;
+}
+
+nav ul li:nth-child(2),
+table tr:nth-child(2),
+label:nth-child(even) {
+    color: red;
+}
+
+p::first-letter {
+    font-size: 2em;
+}
+
+footer {
+    font-size: 11px;
+}
+
+/* Bordas da tabela */
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
